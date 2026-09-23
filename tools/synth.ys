@@ -1,0 +1,5 @@
+read_verilog rtl/arm_condition.v rtl/arm_shifter.v rtl/arm_alu.v rtl/tiny_arm.v
+synth -top tiny_arm
+check -assert
+stat
+write_json build/tiny_arm.json
